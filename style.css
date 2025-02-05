@@ -1,0 +1,216 @@
+body {
+  /* Remove margens e preenchimento padrão */
+  margin: 0;
+  padding: 0;
+  /* Define a cor de fundo da página */
+  background-color: #3b0d9e;
+  /* Define a fonte principal da página */
+  font-family: "Poppins", sans-serif;
+}
+
+.top-bar {
+  /* Define a largura total do cabeçalho */
+  width: 100%;
+  /* Cor de fundo do cabeçalho */
+  background-color: #5713eb;
+  /* Cor do texto do cabeçalho */
+  color: white;
+  /* Alinha os itens horizontalmente e espaça entre eles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Adiciona preenchimento interno */
+  padding: 15px 40px;
+  /* Tamanho do texto */
+  font-size: 18px;
+}
+
+.logo {
+  /* Define a fonte do nome da logo */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links a {
+  /* Define a cor dos links do cabeçalho */
+  color: white;
+  /* Remove o sublinhado dos links */
+  text-decoration: none;
+  /* Espaçamento entre os links */
+  margin-left: 20px;
+  /* Define o peso da fonte dos links */
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline;
+}
+
+.form-container {
+  /* Define a largura e altura do formulário para cobrir a tela toda */
+  width: 100vw;
+  height: 100vh;
+  /* Centraliza os elementos na tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  /* Organiza os itens em coluna */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-tw {
+  /* Espaçamento abaixo do logo */
+  margin-bottom: 30px;
+}
+
+.form-login {
+  /* Organiza os campos do formulário em coluna */
+  display: flex;
+  flex-direction: column;
+  /* Espaçamento entre os elementos */
+  gap: 20px;
+  /* Cor de fundo do formulário */
+  background-color: #fff;
+  /* Arredonda os cantos */
+  border-radius: 8px;
+  /* Define uma borda sutil */
+  border: solid 1px #b6b6b670;
+  /* Adiciona espaçamento interno */
+  padding: 30px 40px;
+}
+
+.form-login h2 {
+  /* Remove a margem superior */
+  margin-top: 0;
+  /* Define o tamanho do título */
+  font-size: 1.4rem;
+  /* Centraliza o título */
+  text-align: center;
+  /* Define o peso da fonte */
+  font-weight: 700;
+}
+
+.form-field {
+  /* Organiza os campos do formulário em coluna */
+  display: flex;
+  flex-direction: column;
+  /* Espaçamento entre os campos */
+  gap: 5px;
+}
+
+.form-field input {
+  /* Define altura e largura dos campos de entrada */
+  height: 20px;
+  width: 350px;
+  /* Define a cor de fundo dos campos */
+  background-color: #f8fafc;
+  /* Define a borda e sua cor */
+  border: solid 1px #b6b6b6be;
+  /* Arredonda os cantos dos campos */
+  border-radius: 8px;
+  /* Adiciona espaçamento interno dentro do campo */
+  padding: 12px;
+  /* Define o tamanho do texto dentro do campo */
+  font-size: 16px;
+}
+
+.form-field input:focus {
+  /* Remove o contorno padrão ao focar no campo */
+  outline: none;
+}
+
+.password-field {
+  /* Alinha a label e o link "Esqueci a senha" */
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-field a {
+  /* Define a cor do link "Esqueci a senha" */
+  color: #613ab4;
+  /* Remove o sublinhado padrão */
+  text-decoration: none;
+}
+
+.form-content button {
+  /* Define largura e altura do botão */
+  width: 100%;
+  height: 60px;
+  /* Cor de fundo do botão */
+  background-color: #3b0d9e;
+  /* Cor do texto */
+  color: #fff;
+  /* Remove a borda */
+  border: none;
+  /* Arredonda os cantos do botão */
+  border-radius: 8px;
+  /* Define o peso da fonte */
+  font-weight: bold;
+}
+
+.form-content button:hover {
+  /* Altera a cor de fundo ao passar o mouse */
+  background-color: #613ab4;
+  /* Adiciona uma transição suave */
+  transition: 0.6s;
+}
+
+.divisor {
+  /* Alinha os elementos horizontalmente */
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+hr {
+  /* Faz as linhas ocuparem todo o espaço disponível */
+  width: 100%;
+}
+
+.google-login {
+  /* Alinha os itens dentro do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Define largura e borda do botão */
+  width: 100%;
+  border: solid 1px #b6b6b6be;
+  border-radius: 8px;
+  /* Define a cor do texto */
+  color: black;
+  /* Espaçamento interno do botão */
+  gap: 5px;
+  /* Remove o sublinhado do link */
+  text-decoration: none;
+  /* Define o preenchimento interno */
+  padding: 8px;
+  /* Define o tamanho do texto */
+  font-size: 16px;
+}
+
+.google-login:hover {
+  /* Altera a cor da borda ao passar o mouse */
+  border-color: black;
+  /* Adiciona uma transição suave */
+  transition: 0.6s;
+}
+
+.form-content p {
+  /* Define a cor do texto abaixo do formulário */
+  color: #ffffff;
+  /* Centraliza o texto */
+  text-align: center;
+}
+
+.form-content p a {
+  /* Define a cor do link de cadastro */
+  color: #d8cdf1;
+  /* Remove o sublinhado do link */
+  text-decoration: none;
+}
