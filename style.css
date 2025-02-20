@@ -1,4 +1,4 @@
-/* Reset geral para evitar problemas de margem e padding */
+/* Reset para evitar problemas */
 * {
   margin: 0;
   padding: 0;
@@ -12,46 +12,42 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px; /* Adicionado para evitar que encoste na borda */
+  padding: 20px;
 }
 
-/* Container principal do formulário */
+/* Container principal */
 .form-container {
   width: 100%;
   max-width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Estrutura do conteúdo do formulário */
-.form-content {
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
+  text-align: center;
 }
 
+/* Ajuste da logo para não ocupar muito espaço */
 .logo-tw {
-  margin-bottom: 20px;
+  width: 70%; /* Reduzindo para telas menores */
+  max-width: 180px;
+  margin-bottom: 10px;
 }
 
-/* Estilos do formulário */
+/* Formulário responsivo */
 .form-login {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   background-color: #fff;
   border-radius: 8px;
   border: solid 1px #b6b6b670;
-  padding: 30px;
+  padding: 20px;
   width: 100%;
-  max-width: 400px; /* Máximo permitido */
+  max-width: 400px;
 }
 
 /* Título */
 .form-login h2 {
-  margin-top: 0;
   font-size: 1.4rem;
   text-align: center;
   font-weight: 700;
@@ -66,7 +62,7 @@ body {
 
 .form-field input {
   height: 45px;
-  width: 100%; /* Ocupa 100% do container */
+  width: 100%; /* Agora ocupa toda a largura disponível */
   background-color: #f8fafc;
   border: solid 1px #b6b6b6be;
   border-radius: 8px;
@@ -74,18 +70,7 @@ body {
   font-size: 16px;
 }
 
-/* Senha */
-.password-field {
-  display: flex;
-  justify-content: space-between;
-}
-
-.password-field a {
-  color: #613ab4;
-  text-decoration: none;
-}
-
-/* Botão de login */
+/* Botão */
 .form-content button {
   width: 100%;
   height: 50px;
@@ -126,63 +111,43 @@ hr {
   font-size: 16px;
 }
 
-.google-login:hover {
-  border-color: black;
-  transition: 0.6s;
-}
-
-.form-content p {
-  color: #ffffff;
-  text-align: center;
-}
-
-.form-content p a {
-  color: #d8cdf1;
-  text-decoration: none;
-}
-
 /* RESPONSIVIDADE */
 
-/* Para tablets e telas menores */
+/* Tablets */
 @media (max-width: 768px) {
   .form-container {
     padding: 10px;
   }
 
   .form-login {
-    width: 100%;
-    max-width: 350px; /* Reduzindo um pouco mais */
-    padding: 20px;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .logo-tw {
+    width: 60%;
+    max-width: 150px;
   }
 
   .form-login h2 {
     font-size: 1.3rem;
   }
-
-  .form-field input {
-    font-size: 14px;
-    height: 42px;
-  }
-
-  .form-content button {
-    height: 48px;
-  }
-
-  .google-login {
-    font-size: 14px;
-    padding: 8px;
-  }
 }
 
-/* Para celulares pequenos (telas menores que 480px) */
+/* Celulares pequenos */
 @media (max-width: 480px) {
   .form-container {
     padding: 5px;
   }
 
   .form-login {
-    max-width: 100%;
-    padding: 15px;
+    max-width: 95%;
+    padding: 12px;
+  }
+
+  .logo-tw {
+    width: 50%;
+    max-width: 120px;
   }
 
   .form-login h2 {
