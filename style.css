@@ -217,23 +217,23 @@ hr {
 
 /* 🔹 Responsividade completa */
 
-/* ✅ Ajuste para celulares */
+/* ✅ Ajuste para celulares (caixa branca mais larga) */
 @media (max-width: 480px) {
   .form-container {
     padding: 5px;
   }
 
   .form-login {
-    max-width: 95%;
-    padding: 20px;
+    max-width: 100%; /* Agora a caixa branca fica maior no celular */
+    padding: 45px;
   }
 
   .logo-tw {
-    max-width: 150px;
+    max-width: 160px;
   }
 
   .form-login h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .form-field input {
