@@ -1,151 +1,221 @@
-/* Reset geral para evitar problemas */
-* {
+body {
+  /* Remove margens e preenchimento padrão */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+  /* Define a cor de fundo da página */
   background-color: #3b0d9e;
+  /* Define a fonte principal da página */
   font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
 }
 
-/* Container principal */
+.top-bar {
+  /* Define a largura total do cabeçalho */
+  width: 100%;
+  /* Cor de fundo do cabeçalho */
+  background-color: #5713eb;
+  /* Cor do texto do cabeçalho */
+  color: white;
+  /* Alinha os itens horizontalmente e espaça entre eles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Adiciona preenchimento interno */
+  padding: 15px 40px;
+  /* Tamanho do texto */
+  font-size: 18px;
+}
+
+.logo {
+  /* Define a fonte do nome da logo */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links a {
+  /* Define a cor dos links do cabeçalho */
+  color: white;
+  /* Remove o sublinhado dos links */
+  text-decoration: none;
+  /* Espaçamento entre os links */
+  margin-left: 20px;
+  /* Define o peso da fonte dos links */
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline;
+}
+
 .form-container {
-  width: 100%;
-  max-width: 500px; /* Agora maior no desktop */
+  /* Define a largura e altura do formulário para cobrir a tela toda */
+  width: 100vw;
+  height: 100vh;
+  /* Centraliza os elementos na tela */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-content {
+  /* Organiza os itens em coluna */
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  text-align: center;
 }
 
-/* Ajuste da logo */
 .logo-tw {
-  width: 70%;
-  max-width: 200px;
-  margin-bottom: 20px;
+  /* Espaçamento abaixo do logo */
+  margin-bottom: 30px;
 }
 
-/* Formulário */
 .form-login {
+  /* Organiza os campos do formulário em coluna */
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  /* Espaçamento entre os elementos */
+  gap: 20px;
+  /* Cor de fundo do formulário */
   background-color: #fff;
+  /* Arredonda os cantos */
   border-radius: 8px;
+  /* Define uma borda sutil */
   border: solid 1px #b6b6b670;
-  padding: 30px;
-  width: 100%;
-  max-width: 450px; /* Mantém um tamanho maior no desktop */
+  /* Adiciona espaçamento interno */
+  padding: 30px 40px;
 }
 
-/* Título */
 .form-login h2 {
-  font-size: 1.6rem;
+  /* Remove a margem superior */
+  margin-top: 0;
+  /* Define o tamanho do título */
+  font-size: 1.4rem;
+  /* Centraliza o título */
   text-align: center;
+  /* Define o peso da fonte */
   font-weight: 700;
 }
 
-/* Campos do formulário */
 .form-field {
+  /* Organiza os campos do formulário em coluna */
   display: flex;
   flex-direction: column;
+  /* Espaçamento entre os campos */
   gap: 5px;
 }
 
 .form-field input {
-  height: 45px;
-  width: 100%;
+  /* Define altura e largura dos campos de entrada */
+  height: 20px;
+  width: 350px;
+  /* Define a cor de fundo dos campos */
   background-color: #f8fafc;
+  /* Define a borda e sua cor */
   border: solid 1px #b6b6b6be;
+  /* Arredonda os cantos dos campos */
   border-radius: 8px;
+  /* Adiciona espaçamento interno dentro do campo */
   padding: 12px;
+  /* Define o tamanho do texto dentro do campo */
   font-size: 16px;
 }
 
-/* Botão */
+.form-field input:focus {
+  /* Remove o contorno padrão ao focar no campo */
+  outline: none;
+}
+
+.password-field {
+  /* Alinha a label e o link "Esqueci a senha" */
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-field a {
+  /* Define a cor do link "Esqueci a senha" */
+  color: #613ab4;
+  /* Remove o sublinhado padrão */
+  text-decoration: none;
+}
+
 .form-content button {
+  /* Define largura e altura do botão */
   width: 100%;
-  height: 50px;
+  height: 60px;
+  /* Cor de fundo do botão */
   background-color: #3b0d9e;
+  /* Cor do texto */
   color: #fff;
+  /* Remove a borda */
   border: none;
+  /* Arredonda os cantos do botão */
   border-radius: 8px;
+  /* Define o peso da fonte */
   font-weight: bold;
-  cursor: pointer;
 }
 
 .form-content button:hover {
+  /* Altera a cor de fundo ao passar o mouse */
   background-color: #613ab4;
+  /* Adiciona uma transição suave */
   transition: 0.6s;
 }
 
-/* Linha divisória */
 .divisor {
+  /* Alinha os elementos horizontalmente */
   display: flex;
   align-items: center;
   gap: 3px;
 }
 
 hr {
+  /* Faz as linhas ocuparem todo o espaço disponível */
   width: 100%;
 }
 
 .google-login {
+  /* Alinha os itens dentro do botão */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Define largura e borda do botão */
   width: 100%;
   border: solid 1px #b6b6b6be;
   border-radius: 8px;
+  /* Define a cor do texto */
   color: black;
+  /* Espaçamento interno do botão */
+  gap: 5px;
+  /* Remove o sublinhado do link */
   text-decoration: none;
-  padding: 10px;
+  /* Define o preenchimento interno */
+  padding: 8px;
+  /* Define o tamanho do texto */
   font-size: 16px;
 }
 
-/* ✅ Mantendo tamanho maior para telas grandes (desktop) */
-@media (min-width: 1024px) {
-  .form-container {
-    max-width: 600px;
-  }
-
-  .form-login {
-    max-width: 500px;
-    padding: 35px;
-  }
-
-  .logo-tw {
-    max-width: 220px;
-  }
+.google-login:hover {
+  /* Altera a cor da borda ao passar o mouse */
+  border-color: black;
+  /* Adiciona uma transição suave */
+  transition: 0.6s;
 }
 
-/* ✅ Ajuste para tablets */
-@media (max-width: 768px) {
-  .form-container {
-    padding: 10px;
-  }
-
-  .form-login {
-    max-width: 380px;
-    padding: 25px;
-  }
-
-  .logo-tw {
-    max-width: 180px;
-  }
-
-  .form-login h2 {
-    font-size: 1.4rem;
-  }
+.form-content p {
+  /* Define a cor do texto abaixo do formulário */
+  color: #ffffff;
+  /* Centraliza o texto */
+  text-align: center;
 }
+
+.form-content p a {
+  /* Define a cor do link de cadastro */
+  color: #d8cdf1;
+  /* Remove o sublinhado do link */
+  text-decoration: none;
+}
+
+/* 🔹 Responsividade completa */
 
 /* ✅ Ajuste para celulares */
 @media (max-width: 480px) {
@@ -154,8 +224,8 @@ hr {
   }
 
   .form-login {
-    max-width: 90%; /* Agora fica menor só no celular */
-    padding: 15px;
+    max-width: 95%;
+    padding: 20px;
   }
 
   .logo-tw {
@@ -167,17 +237,18 @@ hr {
   }
 
   .form-field input {
+    width: 100%;
+    height: 40px;
     font-size: 14px;
-    height: 38px;
   }
 
   .form-content button {
-    height: 42px;
+    height: 45px;
     font-size: 14px;
   }
 
   .google-login {
-    font-size: 12px;
-    padding: 6px;
+    font-size: 14px;
+    padding: 8px;
   }
 }
